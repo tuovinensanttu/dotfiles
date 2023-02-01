@@ -55,6 +55,7 @@ return packer.startup(function(use)
 	-- fuzzy finding
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
+	use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp")
@@ -75,6 +76,12 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
+	use({
+		"smjonas/inc-rename.nvim",
+		config = function()
+			require("inc_rename").setup()
+		end,
+	})
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim")
