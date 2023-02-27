@@ -21,7 +21,7 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"tailwindcss",
-		"sumneko_lua",
+		"lua_ls",
 		"jedi_language_server", -- python
 	},
 })
