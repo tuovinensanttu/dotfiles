@@ -43,19 +43,20 @@ return packer.startup(function(use)
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
-	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
-
 	-- icons
 	use("kyazdani42/nvim-web-devicons")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
 
-	-- fuzzy finding
+	-- fuzzy finding + telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 	use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
+	use({
+		"nvim-telescope/telescope-file-browser.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	})
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp")

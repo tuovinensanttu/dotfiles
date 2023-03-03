@@ -13,7 +13,8 @@ keymap.set({ "n", "v", "o" }, "<S-n>", "b", { noremap = true }) -- N -> go to st
 keymap.set({ "n", "v", "o" }, "<S-i>", "e", { noremap = true }) -- I -> go to end of next word
 
 -- remap page down
-keymap.set({ "n", "v" }, "<C-e>", "<C-d>", { noremap = true }) -- Control-e -> Page down
+keymap.set({ "n", "v" }, "<C-e>", "<C-d>zz", { noremap = true }) -- Control-e -> Page down
+keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz", { noremap = true }) -- Control-e -> Page down
 
 -- remap moving between windows
 keymap.set({ "n", "v" }, "<leader>n", "<C-w>h", { noremap = true }) -- Space-n -> switch windows to the left
@@ -51,15 +52,13 @@ keymap.set("n", "<leader>tp", ":tabn<CR>") -- go previous tab
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap.set("n", "<leader>e", "<cmd>Telescope file_browser<cr>") -- open file browser
 
 -- telescope git commands (not on youtube nvim video)
 keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]

@@ -18,9 +18,13 @@ telescope.setup({
 	defaults = {
 		mappings = {
 			i = {
-				["<C-k>"] = actions.move_selection_previous,
-				["<C-j>"] = actions.move_selection_next,
+				["<C-u>"] = actions.move_selection_previous,
+				["<C-e>"] = actions.move_selection_next,
 				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+			},
+			n = {
+				["u"] = actions.move_selection_previous,
+				["e"] = actions.move_selection_next,
 			},
 		},
 		extensions = {
@@ -33,3 +37,4 @@ telescope.setup({
 
 telescope.load_extension("fzf")
 telescope.load_extension("ui-select")
+telescope.load_extension("file_browser")
