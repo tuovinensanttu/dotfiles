@@ -51,7 +51,7 @@ return packer.startup(function(use)
 
 	-- fuzzy finding + telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
+	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "kdheepak/lazygit.nvim" } })
 	use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
 	use({
 		"nvim-telescope/telescope-file-browser.nvim",
