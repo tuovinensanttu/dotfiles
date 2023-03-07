@@ -4,8 +4,8 @@ local keymap = vim.keymap -- for conciseness
 
 -- remap movement to work on colemak
 keymap.set({ "n", "v", "o" }, "n", "h", { noremap = true }) -- n -> go left
-keymap.set({ "n", "v", "o" }, "u", "k", { noremap = false }) -- u -> go up
-keymap.set({ "n", "v", "o" }, "e", "j") -- e -> go down
+keymap.set({ "n", "v", "o" }, "u", "k", { noremap = true }) -- u -> go up
+keymap.set({ "n", "v", "o" }, "e", "j", { noremap = true }) -- e -> go down
 keymap.set({ "n", "v", "o" }, "i", "l", { noremap = true }) -- i -> go right
 
 -- remap e and w movements
@@ -22,7 +22,9 @@ keymap.set({ "n", "v" }, "<leader>i", "<C-w>l", { noremap = true }) -- Space-i -
 
 keymap.set({ "n", "v" }, "l", "u", { noremap = true }) -- l -> undo
 keymap.set({ "n", "v" }, "h", "i", { noremap = true }) -- h -> insert mode
-keymap.set({ "n", "v" }, "<S-l>", "<C-r>", { noremap = true }) -- L -> asdasdasd
+keymap.set({ "n", "v" }, "<S-l>", "<C-r>", { noremap = true }) -- L -> redo
+keymap.set({ "n", "v" }, "k", "n", { noremap = true }) -- h -> map k as n to allow using search
+keymap.set({ "n", "v" }, "K", "N", { noremap = true }) -- h -> map K as N to allow using seach backwards
 
 -- general keymaps
 keymap.set({ "n", "v" }, "$", "^", { noremap = true })
