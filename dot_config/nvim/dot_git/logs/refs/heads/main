@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 ea6deb38cd60ba3915750168cf7eff092ae3aaa1 ST <santtu.tuovinen2@gmail.com> 1705847131 +0200	commit (initial): initial commit
+ea6deb38cd60ba3915750168cf7eff092ae3aaa1 ea6deb38cd60ba3915750168cf7eff092ae3aaa1 ST <santtu.tuovinen2@gmail.com> 1705847157 +0200	Branch: renamed refs/heads/main to refs/heads/main
+ea6deb38cd60ba3915750168cf7eff092ae3aaa1 5f1200dd75d6eee039c969bbf3c0fa8a4b712e5b ST <santtu.tuovinen2@gmail.com> 1705847284 +0200	commit: Remove unuseful line
+5f1200dd75d6eee039c969bbf3c0fa8a4b712e5b 8f4c401494c568731a7473a7bda6d8c975c5d100 ST <santtu.tuovinen2@gmail.com> 1705854756 +0200	commit: Disable line swapping in insert + normal modes
+8f4c401494c568731a7473a7bda6d8c975c5d100 e95e8738c743c68ba2886c8d3993c27e02ba7f6f ST <santtu.tuovinen2@gmail.com> 1706265276 +0200	pull: Fast-forward
+e95e8738c743c68ba2886c8d3993c27e02ba7f6f c1d59ff31e763d95ea5845621c8f201357a559c4 ST <santtu.tuovinen2@gmail.com> 1706454788 +0200	commit: Commit changes to lock file
+c1d59ff31e763d95ea5845621c8f201357a559c4 68e87e0ab4debcef58e47d2adcc187d83b782239 ST <santtu.tuovinen2@gmail.com> 1706460349 +0200	commit: Move telescope search to the top
+68e87e0ab4debcef58e47d2adcc187d83b782239 b7a35bb07ac21ffb04d0a8f01f3e7771ebe32616 ST <santtu.tuovinen2@gmail.com> 1706463030 +0200	commit: Make control + j and k navigation work in telescope
+b7a35bb07ac21ffb04d0a8f01f3e7771ebe32616 8db178a46d08f25617763dd74512850d5335db1a ST <santtu.tuovinen2@gmail.com> 1706945136 +0200	pull --no-edit: Fast-forward
+8db178a46d08f25617763dd74512850d5335db1a 3f0b5fe783cd897ede5ab7c140d191d9e49da5df ST <santtu.tuovinen2@gmail.com> 1706945177 +0200	commit: Package updates
+3f0b5fe783cd897ede5ab7c140d191d9e49da5df 4385eae4dbdab14262157344256b12d5ecd42e0e ST <santtu.tuovinen2@gmail.com> 1706949435 +0200	commit: Add extra movement keys + oil binds
+4385eae4dbdab14262157344256b12d5ecd42e0e 2c7616ed4cef0de3e95925c95f1b4cba1e25cc16 ST <santtu.tuovinen2@gmail.com> 1706949453 +0200	commit: Disable neotree and add oil
+2c7616ed4cef0de3e95925c95f1b4cba1e25cc16 2255c58420163871abdb659e7514605bbb6b2e0c ST <santtu.tuovinen2@gmail.com> 1706949464 +0200	commit: j + k binds for live_grep
+2255c58420163871abdb659e7514605bbb6b2e0c bdfa004c2296ad5449777dc6d1fb25aa3f91f46d ST <santtu.tuovinen2@gmail.com> 1706949480 +0200	commit: Updates to lockfile
+bdfa004c2296ad5449777dc6d1fb25aa3f91f46d c1eec2cdac9132c5f72382117acc964ed9afc34a ST <santtu.tuovinen2@gmail.com> 1707121983 +0200	commit: Add harpoon
+c1eec2cdac9132c5f72382117acc964ed9afc34a 8f258e9ed525b9f56923199bb5ca492c71701f11 ST <santtu.tuovinen2@gmail.com> 1707121995 +0200	commit: Disable folke flash
+8f258e9ed525b9f56923199bb5ca492c71701f11 dc26ce3045b8b7dfcb1832f00c33b0e6ea35fa68 ST <santtu.tuovinen2@gmail.com> 1708619161 +0200	pull --no-edit: Fast-forward
+dc26ce3045b8b7dfcb1832f00c33b0e6ea35fa68 e9a6169163b22378d5733e99dc3ab442917f0732 ST <santtu.tuovinen2@gmail.com> 1708619374 +0200	commit: Uptates
+e9a6169163b22378d5733e99dc3ab442917f0732 4f8dd3d022e5c6e8dfd921abd685717733ee8318 ST <santtu.tuovinen2@gmail.com> 1708624775 +0200	commit: Install obsidian and nvim-dap
