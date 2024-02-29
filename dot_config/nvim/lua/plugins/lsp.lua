@@ -40,4 +40,25 @@ return {
       opts.completion.completeopt = "menu,menuone,noselect"
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {
+          implicitProjectConfiguration = {
+            checkJs = true,
+            importModuleSpecifierPreference = "non-relative",
+          },
+        },
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        ["python"] = { "black", "isort" },
+      },
+    },
+  },
 }
