@@ -7,6 +7,7 @@ return {
         "stylua",
         "shellcheck",
         "css-lsp",
+        "vue-language-server",
       })
       opts.PATH = "append"
     end,
