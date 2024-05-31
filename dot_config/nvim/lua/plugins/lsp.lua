@@ -22,6 +22,7 @@ return {
       })
       local cmp_preselect_type = require("cmp.types").cmp.PreselectMode.None
       local cmp = require("cmp")
+
       opts.mapping = {
         ["<C-y>"] = cmp.mapping.confirm({
           behavior = cmp.ConfirmBehavior.Replace,
