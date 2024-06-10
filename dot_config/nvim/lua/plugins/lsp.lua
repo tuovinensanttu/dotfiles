@@ -12,6 +12,13 @@ return {
       opts.PATH = "append"
     end,
   },
+  -- Disable default <tab> and <s-tab> behavior in LuaSnip
+  {
+    "L3MON4D3/LuaSnip",
+    keys = function()
+      return {}
+    end,
+  },
   {
     "nvim-cmp",
     opts = function(_, opts)
@@ -24,10 +31,6 @@ return {
       local cmp = require("cmp")
 
       opts.mapping = {
-        ["<C-y>"] = cmp.mapping.confirm({
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = true,
-        }),
         ["<C-e>"] = cmp.mapping.abort(),
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
