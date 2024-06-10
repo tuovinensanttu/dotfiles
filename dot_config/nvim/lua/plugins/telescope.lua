@@ -7,6 +7,7 @@ return {
         require("telescope.builtin").find_files({
           no_ignore = true,
           hidden = true,
+          additional_args = { "--hidden" },
         })
       end,
       desc = "Find hidden files",
@@ -17,6 +18,7 @@ return {
         require("telescope.builtin").live_grep({
           no_ignore = true,
           hidden = true,
+          additional_args = { "--hidden" },
         })
       end,
       desc = "Search hidden files",
