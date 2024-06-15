@@ -23,7 +23,17 @@ return {
       end,
       desc = "Search hidden files",
     },
+    {
+      "<leader>bm",
+      function()
+        require("telescope").extensions.bookmarks.list()
+      end,
+    },
   },
+  config = function(_, opts)
+    require("telescope").load_extension("bookmarks")
+    require("telescope").setup(opts)
+  end,
   opts = {
     defaults = {
       layout_config = {
@@ -60,6 +70,24 @@ return {
         },
       },
       git_files = {
+        sort_lastused = true,
+        mappings = {
+          i = {
+            ["<C-j>"] = require("telescope.actions").move_selection_next,
+            ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          },
+        },
+      },
+      lsp_document_symbols = {
+        sort_lastused = true,
+        mappings = {
+          i = {
+            ["<C-j>"] = require("telescope.actions").move_selection_next,
+            ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          },
+        },
+      },
+      lsp_dynamic_workspace_symbols = {
         sort_lastused = true,
         mappings = {
           i = {
