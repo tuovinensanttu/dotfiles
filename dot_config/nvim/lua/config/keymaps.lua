@@ -65,6 +65,8 @@ keymap.set("n", "<leader>5", function()
   harpoon:list():select(5)
 end)
 
-vim.keymap.set("n", "<leader>t", function()
+keymap.set("n", "<leader>t", function()
   require("telescope.builtin").builtin({ include_extensions = true })
 end)
+
+keymap.set("n", "<leader>cu", "<cmd>UndotreeToggle<CR>")
