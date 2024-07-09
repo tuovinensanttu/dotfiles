@@ -3,3 +3,6 @@
 -- Add any additional options here
 --
 vim.g.lazyvim_python_lsp = "pyright"
+
+-- Disable swap files
+vim.opt.swapfile = false
