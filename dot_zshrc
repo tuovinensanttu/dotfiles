@@ -25,3 +25,9 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Load zsh-vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+bindkey '^p' atuin-search
+bindkey '^n' atuin-down-search
