@@ -4,6 +4,9 @@
 
 local keymap = vim.keymap
 
+-- Control+c as esc
+keymap.set("i", "<C-c>", "<Esc>")
+
 -- Keep focus in the middle with page up and down
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")

@@ -3,6 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensture_installed = {
+        "html",
         "css",
         "toml",
         "yaml",
@@ -12,8 +13,8 @@ return {
         "gitignore",
         "http",
         "sql",
-        "css",
         "python",
+        "vue",
       },
     },
   },
