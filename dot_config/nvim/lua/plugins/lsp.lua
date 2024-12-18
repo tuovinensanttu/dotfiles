@@ -20,30 +20,19 @@ return {
     end,
   },
   {
-    "nvim-cmp",
-    opts = function(_, opts)
-      table.insert(opts.sources, 1, {
-        name = "copilot",
-        group_index = 1,
-        priority = 100,
-      })
-      local cmp_preselect_type = require("cmp.types").cmp.PreselectMode.None
-      local cmp = require("cmp")
-
-      opts.mapping = {
-        ["<C-e>"] = cmp.mapping.abort(),
-        ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-f>"] = cmp.mapping.scroll_docs(4),
-        ["<C-j>"] = cmp.mapping.select_next_item(),
-        ["<C-k>"] = cmp.mapping.select_prev_item(),
-        ["<CR>"] = cmp.mapping.confirm({
-          behavior = cmp.ConfirmBehavior.Replace,
-          select = false,
-        }),
-      }
-      opts.preselect = cmp_preselect_type
-      opts.completion.completeopt = "menu,menuone,noselect"
-    end,
+    "saghen/blink.cmp",
+    opts = {
+      keymap = {
+        ["<C-j>"] = { "select_next" },
+        ["<C-k>"] = { "select_prev" },
+        ["<C-y>"] = {},
+      },
+      completion = {
+        list = {
+          selection = "manual",
+        },
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
