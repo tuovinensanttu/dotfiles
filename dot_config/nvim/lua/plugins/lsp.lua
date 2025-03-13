@@ -51,7 +51,13 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        ["python"] = { "black", "isort" },
+        python = { "black", "isort" },
+        yaml = { "prettier" },
+      },
+      formatters = {
+        prettier = {
+          prepend_args = { "--single-quote" },
+        },
       },
     },
   },
