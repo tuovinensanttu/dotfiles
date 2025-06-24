@@ -6,3 +6,6 @@ vim.g.lazyvim_python_lsp = "pyright"
 
 -- Disable swap files
 vim.opt.swapfile = false
+
+-- Disable all animations
+vim.g.snacks_animate = false
