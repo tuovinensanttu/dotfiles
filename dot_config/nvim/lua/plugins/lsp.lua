@@ -44,6 +44,9 @@ return {
             importModuleSpecifierPreference = "non-relative",
           },
         },
+        pyright = {
+          cmd = { "pyright-langserver", "--stdio", "--max-old-space-size=8192" },
+        },
       },
     },
   },
