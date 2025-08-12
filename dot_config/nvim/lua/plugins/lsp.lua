@@ -46,6 +46,25 @@ return {
         },
         pyright = {
           cmd = { "pyright-langserver", "--stdio", "--max-old-space-size=8192" },
+          settings = {
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                diagnosticMode = "openFilesOnly",
+                useLibraryCodeForTypes = true,
+                exclude = {
+                  "**/cdk.out/**",
+                  "**/node_modules/**",
+                  "**/__pycache__/**",
+                  "**/dist/**",
+                  "**/build/**",
+                  "**/.git/**",
+                  "**/site-packages/**",
+                  "**/.aws-sam/**",
+                },
+              },
+            },
+          },
         },
       },
     },
