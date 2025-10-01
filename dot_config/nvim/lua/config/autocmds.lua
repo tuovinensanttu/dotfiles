@@ -10,3 +10,11 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.wo.conceallevel = 0
   end,
 })
+
+-- Disable black formatting for .approved. files
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*.approved.*",
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
