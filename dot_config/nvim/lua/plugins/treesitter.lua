@@ -15,6 +15,7 @@ return {
         "sql",
         "python",
         "vue",
+        "robot",
       },
     },
   },

@@ -66,6 +66,9 @@ return {
             },
           },
         },
+        robotframework_ls = {
+          cmd = { vim.fn.expand("~") .. "/Dev/posti-api/posti-api-hub-testing/.venv/bin/robotframework_ls" },
+        },
       },
     },
   },
@@ -75,11 +78,20 @@ return {
       formatters_by_ft = {
         python = { "black", "isort" },
         yaml = { "prettier" },
+        robot = { "robotidy" },
       },
       formatters = {
         prettier = {
           prepend_args = { "--single-quote" },
         },
+      },
+    },
+  },
+  {
+    "mfussenegger/nvim-lint",
+    opts = {
+      linters_by_ft = {
+        rogot = { "robocop" },
       },
     },
   },
