@@ -78,11 +78,18 @@ return {
       formatters_by_ft = {
         python = { "black", "isort" },
         yaml = { "prettier" },
-        robot = { "robotidy" },
+        robot = { "robocop" },
       },
       formatters = {
         prettier = {
           prepend_args = { "--single-quote" },
+        },
+        robocop = {
+          command = "robocop",
+          args = function(self, ctx)
+            return { "format", "--overwrite", "$FILENAME" }
+          end,
+          stdin = false,
         },
       },
     },
@@ -91,7 +98,17 @@ return {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
-        rogot = { "robocop" },
+        robot = { "robocop" },
+      },
+      linters = {
+        robocop = {
+          cmd = "robocop",
+          stdin = false,
+          args = { "check" },
+          stream = "stdout",
+          parser = require("lint.parser").from_errorformat("%f:%l:%c %t%*[^:]: %m", { source = "robocop" }),
+          ignore_exitcode = true,
+        },
       },
     },
   },
