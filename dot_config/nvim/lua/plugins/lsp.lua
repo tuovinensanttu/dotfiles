@@ -79,6 +79,8 @@ return {
         python = { "black", "isort" },
         yaml = { "prettier" },
         robot = { "robocop" },
+        http = {},
+        rest = {},
       },
       formatters = {
         prettier = {
